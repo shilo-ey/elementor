@@ -138,6 +138,8 @@ class Widget_Icon extends Widget_Base {
 				'options' => [
 					'circle' => __( 'Circle', 'elementor' ),
 					'square' => __( 'Square', 'elementor' ),
+					'diamond' => __( 'Diamond', 'elementor' ),
+					'hexagon' => __( 'Hexagon', 'elementor' ),
 				],
 				'default' => 'circle',
 				'condition' => [
@@ -339,6 +341,24 @@ class Widget_Icon extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon i, {{WRAPPER}} .elementor-icon svg' => 'transform: rotate({{SIZE}}{{UNIT}});',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'line_height',
+			[
+				'label' => __( 'Icon Line Height', 'elementor' ),
+				'type' => Controls_Manager::SLIDER,
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 5,
+						'step' => .1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .elementor-icon i, {{WRAPPER}} .elementor-icon svg' => 'line-height: {{SIZE}};',
 				],
 			]
 		);
