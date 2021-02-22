@@ -7,7 +7,7 @@ Visit the plugin page to download [Elementor Beta - Developer Edition](https://w
 ## Changelog
 **3.2.0-dev4 - 2021-02-22**
 * Tweak: Changed devices switching UI to Responsive Top bar to allow future extra breakpoints
-* Tweak: Added Gradient Background option to Button widget
+* Tweak: Added Gradient Background option to Button widget (https://github.com/elementor/elementor/issues/3142)
 * Tweak: Splitted `eicons` library into Editor and Frontend usages in Optimized Asset Load experiment
 * Tweak: Made widgets panel resizing more responsive
 * Tweak: Added sticky search box in the widgets panel
